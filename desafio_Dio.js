@@ -1,7 +1,7 @@
 let heroi = [
     nome = "titã", 
     xp,
-    xpPontos = 6000
+    xpPontos = 6000,
     genero = "M",
     classe = "guerreiro"
 
@@ -11,42 +11,40 @@ if (xpPontos <= 1000)  {
    xp = "ferro";
 }else if 
 
-(xpPontos >=1001 || 2000){
+(xpPontos >=1001 || xpPontos>= 2000){
 
 xp = "bronze"
 
 }else if
-(xpPontos >= 2001 || 5000) {
+(xpPontos >= 2001 || xpPontos>= 5000) {
 
 xp = "prata"
 
 }else if
 
-(xpPontos >= 6001 || 7000) {
+(xpPontos >= 6001 || xpPontos>= 7000) {
 
  xp = "ouro"
 
 }else if
 
-(xpPontos >= 7001 || 8000) {
+(xpPontos >= 7001 || xpPontos>= 8000) {
 
 xp = "platina"
 
 }else if
 
-(xpPontos >= 8001 || 9000) {
+(xpPontos >= 8001 || xpPontos>= 9000) {
 
 xp = "ascentente"
 
 }else if
 
-(xpPontos >=9001 || 10000) {
+(xpPontos >=9001 || xpPontos>=10000) {
 
 xp = "imortal"
 
-}else 
-
-(xpPontos >=10001) {
+}else{
 
 xp = "radiante"
 
