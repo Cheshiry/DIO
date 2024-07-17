@@ -3,22 +3,56 @@ let heroi = [
     xp = 7000,
     genero = "M",
     classe = "guerreiro"
-]
+
+
+if (xp <= 1000)  {
+ferro
+}else if 
+
+(xp >=1001 || 2000){
+
+bronze
+
+}
+(xp >= 2001 || 5000) {
+
+prata
+
+}
+
+(xp >= 6001 || 7000) {
+
+ouro
+
+}
+
+(xp >= 7001 || 8000) {
+
+platina
+
+}
+
+(xp >= 8001 || 9000) {
+
+ascentente
+
+}
+
+(xp >=9001 || 10000) {
+
+imortal
+
+}
+
+(xp >=10001) {
+
+radiante
+
+}
+
+msg = console.log(`o heroi de nome ${nome} está no nivel ${nivel}`);
 
 /*
-xp <= 1000 = ferro
-xp entre 1001 e 2000 = bronze
-xp entre 2001 e 5000 = prata
-xp entre 6001 e 7000 = ouro
-xp entre 7001 e 8000 = platina
-xp entre 8001 e 9000 = ascentente
-xp entre 9001 e 10000 = imortal
-xp >= 10001 = radiante
-
-msg = o heroi de nome {} está no nivel {}
-
-console.log(heroi);
-
 Instruções para entrega
 # 1️⃣ Desafio Classificador de nível de Herói
 
