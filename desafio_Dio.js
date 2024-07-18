@@ -1,56 +1,56 @@
-let heroi = [
-    nome = "titã", 
-    xp,
-    xpPontos = 6000,
-    genero = "M",
-    classe = "guerreiro"
+/*let heroi = [*/
+  let  nome = "titã"; 
+    let rank = "";
+    let xp = 11000;
+    let genero = "M";
+    let classe = "guerreiro";
 
-]
 
-if (xpPontos <= 1000)  {
-   xp = "ferro";
+
+if (xp <= 1000)  {
+   rank = "ferro";
 }else if 
 
-(xpPontos >=1001 || xpPontos>= 2000){
+(xp >=1001 && xp <= 2000){
 
-xp = "bronze"
-
-}else if
-(xpPontos >= 2001 || xpPontos>= 5000) {
-
-xp = "prata"
+rank = "bronze"
 
 }else if
+(xp >= 2001 && xp <= 5000) {
 
-(xpPontos >= 6001 || xpPontos>= 7000) {
-
- xp = "ouro"
+rank = "prata"
 
 }else if
 
-(xpPontos >= 7001 || xpPontos>= 8000) {
+(xp >= 6001 && xp <= 7000) {
 
-xp = "platina"
-
-}else if
-
-(xpPontos >= 8001 || xpPontos>= 9000) {
-
-xp = "ascentente"
+ rank = "ouro"
 
 }else if
 
-(xpPontos >=9001 || xpPontos>=10000) {
+(xp >= 7001 && xp <= 8000) {
 
-xp = "imortal"
+    rank = "platina"
+
+}else if
+
+(xp >= 8001 && xp <= 9000) {
+
+    rank = "ascentente"
+
+}else if
+
+(xp >=9001 && xp <=10000) {
+
+    rank = "imortal"
 
 }else{
 
-xp = "radiante"
+    rank = "radiante"
 
 }
 
-msg = console.log(`o heroi de nome ${nome} está no nivel ${xp}`);
+msg = console.log(`o heroi de nome ${nome} está no nivel ${rank} com ${xp}xp`);
 
 /*
 Instruções para entrega
