@@ -31,34 +31,41 @@ Ao final deve se exibir uma mensagem:
  
 */
 
-function rankeada(won, lose){
+rankeada (60 , 80);
+saldoVitorias = rank;
+nivel (saldoVitorias);
 
+/*function main(rankeada(45,5), nivel (saldoVitorias)
+*/
+function rankeada(win, lose){
+  
+  rank = win - lose;
+  return;
 }
 
-function nivel(){
+function nivel(saldoVitorias){
 
-if vitórias for menor do que 10 {
-Ferro
+  if (saldoVitorias <= 10) {
+    nivel = "Ferro";
+  }
+  else if (saldoVitorias >= 11 && saldoVitorias <= 20) {
+    nivel = "Bronze";
+  }
+  else if (saldoVitorias  >= 21 && saldoVitorias <= 50) {
+    nivel = "Prata";
+  }
+   else if (saldoVitorias  >= 51 && saldoVitorias <= 80) {
+    nivel = "Ouro";
+  }
+  else if (saldoVitorias  >= 81 && saldoVitorias <= 90) {
+    nivel = "Diamante";
 }
-if vitórias for entre 11 e 20 {
-Bronze
+  else if (saldoVitorias  >= 91 && saldoVitorias <= 100){
+    nivel = "Lendário";
+  }
+  else{
+    nivel = "Imortal";
+  }
 }
-if vitórias for entre 21 e 50 {
-Prata
-}
-if vitórias for entre 51 e 80 {
-Ouro
-}
-if vitórias for entre 81 e 90 {
-Diamante
-}
-if vitórias for entre 91 e 100{
-Lendário
-}
-if vitórias for maior ou igual a 101 {
-Imortal
-}
-}
-mensagem
-`O Herói tem de saldo de ${saldoVitorias} está no nível de ${nivel}`
- 
+
+console.log(`O Herói tem de saldo de ${saldoVitorias} está no nível de ${nivel}`);
