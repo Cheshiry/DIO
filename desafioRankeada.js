@@ -31,12 +31,15 @@ Ao final deve se exibir uma mensagem:
  
 */
 
-rankeada (60 , 80);
+function main(){
+rankeada (160 , 80);
 saldoVitorias = rank;
 nivel (saldoVitorias);
 
-/*function main(rankeada(45,5), nivel (saldoVitorias)
-*/
+console.log(`O Herói tem de saldo de ${saldoVitorias} está no nível de ${nivel}`);
+
+}
+
 function rankeada(win, lose){
   
   rank = win - lose;
@@ -68,4 +71,4 @@ function nivel(saldoVitorias){
   }
 }
 
-console.log(`O Herói tem de saldo de ${saldoVitorias} está no nível de ${nivel}`);
+main();
