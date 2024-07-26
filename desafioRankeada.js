@@ -35,7 +35,7 @@ Ao final deve se exibir uma mensagem:
   let saldoVitorias = rankeada(160 , 80);
   nivel(saldoVitorias);
 
-  console.log(`O Herói tem de saldo de ${saldoVitorias} está no nível de ${nivel}`);
+  console.log(`O Herói tem saldo de vitórias  de ${saldoVitorias} e está no nível de ${nivel}`);
 
 
 function rankeada(win, lose){
@@ -45,19 +45,19 @@ function rankeada(win, lose){
 
 function nivel(saldoVitorias){
 
-  if (saldoVitorias <= 10) {
+  if (saldoVitorias <= 10){
     nivel = "Ferro";
   }
-  else if (saldoVitorias >= 11 && saldoVitorias <= 20) {
+  else if (saldoVitorias >= 11 && saldoVitorias <= 20){
     nivel = "Bronze";
   }
-  else if (saldoVitorias  >= 21 && saldoVitorias <= 50) {
+  else if (saldoVitorias  >= 21 && saldoVitorias <= 50){
     nivel = "Prata";
   }
-   else if (saldoVitorias  >= 51 && saldoVitorias <= 80) {
+   else if (saldoVitorias  >= 51 && saldoVitorias <= 80){
     nivel = "Ouro";
   }
-  else if (saldoVitorias  >= 81 && saldoVitorias <= 90) {
+  else if (saldoVitorias  >= 81 && saldoVitorias <= 90){
     nivel = "Diamante";
 }
   else if (saldoVitorias  >= 91 && saldoVitorias <= 100){
