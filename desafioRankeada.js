@@ -31,17 +31,16 @@ Ao final deve se exibir uma mensagem:
  
 */
 
-function main(){
-  rankeada (160 , 80);
-  saldoVitorias = rank;
-  nivel (saldoVitorias);
+
+  let saldoVitorias = rankeada(160 , 80);
+  nivel(saldoVitorias);
 
   console.log(`O Herói tem de saldo de ${saldoVitorias} está no nível de ${nivel}`);
-}
+
 
 function rankeada(win, lose){
   rank = win - lose;
-  return;
+  return rank;
 }
 
 function nivel(saldoVitorias){
@@ -68,5 +67,3 @@ function nivel(saldoVitorias){
     nivel = "Imortal";
   }
 }
-
-main();
