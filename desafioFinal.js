@@ -13,8 +13,20 @@ class Heroi{
 
 class Ataque{
   constructor(tipo){
-    switch ()
-      case
+    switch (){
+      case "guerreiro"
+      console.log();
+      break;
+        case "mago"
+
+      break;
+        case "monje"
+
+      break;
+      case "ninja"
+
+      break;
+    }
   }
 }
 
