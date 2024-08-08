@@ -14,16 +14,16 @@ class Heroi{
 class Ataque{
   constructor(tipo){
     switch (){
-      case "guerreiro"
+      case "guerreiro":
       console.log();
       break;
-        case "mago"
+        case "mago":
 
       break;
-        case "monje"
+        case "monje":
 
       break;
-      case "ninja"
+      case "ninja":
 
       break;
     }
@@ -31,3 +31,6 @@ class Ataque{
 }
 
 let heroiInformacoes = new Heroi(heroi, idade)
+let heroiGolpe = new Ataque(tipo);
+
+console.log(`O ${heroiInformacoes} atacou com ${heroiGolpe}`);
