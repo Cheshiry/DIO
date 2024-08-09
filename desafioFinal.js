@@ -1,36 +1,42 @@
-let heroi = "Belmont";
-let idade = 35;
-let tipo = "Guerreiro";
+let nome = "Gabriel";
+let idade = 32;
+let categoria = "Ninja";
+let tipo = categoria.toLowerCase();
 
-class Heroi{
-  constructor(heroi, idade){
-    this.heroi = heroi;
-    this.idade = idade;
-
-    console.log(`O ${this.heroi} tem ${idade}`);
-  }
-}
-
-class Ataque{
-  constructor(tipo){
-    switch (){
-      case "guerreiro":
-      console.log();
-      break;
-        case "mago":
-
-      break;
-        case "monje":
-
-      break;
-      case "ninja":
-
-      break;
+ class Heroi {
+    constructor(nomeHeroi, idadeHeroi, tipo){
+        this.nomeHeroi = nome;
+        this.idadeHeroi = idade;
+        this.tipo = tipo;
     }
-  }
+} 
+
+function ataque(tipo){
+    
+    let golpe = "";
+
+    if (tipo =="guerreiro"){
+        golpe = ("o guerreiro atacou usando espada!");
+        return golpe;
+    }
+    else if (tipo == "mago"){
+        golpe = ("o mago atacou usando magia!");
+        return golpe;
+    }
+    else if (tipo == "monge"){
+        golpe = ("o monge atacou usando artes marciais!");
+        return golpe;
+    }
+    else if (tipo == "ninja"){
+        golpe = ("ninja atacou usando shuriken!");
+        return golpe;
+    }else{
+        golpe = ("Escolha uma categoria de Herói!!");
+        return golpe;
+    }
+
 }
 
-let heroiInformacoes = new Heroi(heroi, idade)
-let heroiGolpe = new Ataque(tipo);
+let heroi = new Heroi(nome, idade, tipo);
 
-console.log(`O ${heroiInformacoes} atacou com ${heroiGolpe}`);
+console.log(ataque(tipo))
